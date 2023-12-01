@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color2: #a34ee9;
+    --primary-color: #f0ffff;
+    --secondary-color: #000;
+}
+
+body {
+    height: 100vh;
+    min-width: 84px;
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-color);
+    font-family: sans-serif;
+    transition: 0.5s;
+    background-image: linear-gradient(var(--primary-color), rgba(255, 23, 255, 0.39));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    width: 84%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+    list-style: none;
+    margin-right: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a:hover,
+.active {
+    color: #a34ee9;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+#logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.sec1 {
+    margin-left: 8%;
+}
+
+.sec1 h1 {
+    font-size: 70px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.sec1 h1 span,
+.sec1 h3 span {
+    color: purple;
+}
+
+.sec1-1 p h3 {
+    color: var(--secondary-color);
+    line-height: 22px;
+}
+
+.sec1-2 h2 {
+    color: var(--secondary-color);
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.sec1-2 p {
+    color: var(--secondary-color);
+    line-height: 22px;
+}
+
+.sec1 a {
+    background: var(--secondary-color);
+    padding: 10px 20px;
+    margin: 30px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    color: var(--primary-color);
+    transition: 1s;
+}
+
+.sec1 a:hover {
+    background: #a34ee9;
+}
+
+.sec2 {
+    position: relative;
+    align-self: stretch;
+    flex: 1;
+}
+
+.sec2 img {
+    height: 98%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+    cursor: pointer;
+}
+
+footer {
+    margin-left: 8%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+footer a {
+    margin-right: 20px;
+    font-size: 25px;
+    color: var(--secondary-color);
+}
+
+footer a:hover {
+    color: var(--primary-color2);
+}
+
+.search {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search img {
+    width: 40px;
+    rotate: -25deg;
+    cursor: pointer;
+}
+
+.search input {
+    width: 200px;
+    height: 20px;
+}
+
+.formul {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    margin: auto auto;
+    justify-content: space-between;
+    background-image: url(bubble.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+table {
+    flex: 1;
+    padding: 10px;
+    margin: auto auto;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+.warning {
+    color: red;
+    font-size: small;
+    display: inline-block;
+}
+
+.sec2:hover .back-img {
+    bottom: 40px;
+}
+
+.sec2:hover .cris-img {
+    left: 54%;
+}
+
+.next {
+    width: 30%;
+    font-size: 18px;
+}
+
+.dark-mode {
+    --primary-color: #212121;
+    --secondary-color: #f0ffff;
+}
+
+.sec2 {
+    flex: 1;
+}
+
+.glassback {
+    background-image: url(bubble.png);
+    background-color: #f0ffff00;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.about {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    line-height: 30px;
+    font-size: 20px;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+}
+
+.about h3 {
+    margin-top: 10px;
+}
+
+.about-body {
+    background-image: linear-gradient(var(--primary-color), rgba(255, 23, 255, 0.39))
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+}
+
+.container form {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    padding: 20px;
+    width: 600px;
+    padding-top: 160px;
+}
+
+.container form .inputBox {
+    margin-top: 20px;
+}
+
+.container form .inputBox span {
+    display: block;
+    color: #999;
+    padding-bottom: 5px;
+}
+
+.container form .inputBox input,
+.container form .inputBox select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    color: #444;
+}
+
+.container form .flexbox {
+    display: flex;
+    gap: 15px;
+}
+
+.container form .flexbox .inputBox {
+    flex: 1 1 150px;
+}
+
+.container form .submit-btn {
+    width: 100%;
+    background: linear-gradient(45deg, blueviolet, deeppink);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.container form .submit-btn:hover {
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+.container .card-container {
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+.container .card-container .front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    background: linear-gradient(45deg, rgba(137, 43, 226, 0.568), rgba(255, 20, 145, 0.521));
+    backface-visibility: hidden;
+    padding: 20px;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform .4s ease-out;
+}
+
+.container .card-container .front .image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.container .card-container .front .image img {
+    height: 50px;
+}
+
+.container .card-container .front .card-number-box {
+    padding: 30px 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+.container .card-container .front .flexbox {
+    display: flex;
+}
+
+.container .card-container .front .flexbox .box:nth-child(1) {
+    margin-right: auto;
+}
+
+.container .card-container .front .flexbox .box {
+    font-size: 15px;
+    color: #fff;
+}
+
+.container .card-container .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, blueviolet, deeppink);
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    transform: perspective(1000px) rotateY(180deg);
+    transition: transform .4s ease-out;
+}
+
+.container .card-container .back .stripe {
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.container .card-container .back .box {
+    padding: 0 20px;
+}
+
+.container .card-container .back .box span {
+    color: #fff;
+    font-size: 15px;
+}
+
+.container .card-container .back .box .cvv-box {
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color: #333;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.container .card-container .back .box img {
+    margin-top: 30px;
+    height: 30px;
+}
